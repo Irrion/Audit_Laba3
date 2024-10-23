@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laba3</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Hallo everynyan</h1>
+
+    <section>
+        <form action="/get" method="get">
+            <button type="submit">GET-запрос</button>
+        </form>
+    </section>
+
+    <section>
+        <form action="/post" method="post">
+            <button type="submit">POST-запрос</button>
+        </form>
+    </section>
+
+    <section>
+        <form action="/head" method="head"> 
+            <button type="submit">HEAD-запрос</button>
+        </form>
+    </section>
+
+    <section>
+        <form action="/options" method="options"> 
+            <button type="submit">OPTIONS-запрос</button>
+        </form>
+    </section>
+</body>
+</html>
